@@ -55,7 +55,20 @@ const math = (a,b,c)=>{
     return result1;
 }
 const res = math(5,2,3)
-console.log(res);
+// console.log(res);
+
+// Spread operators
+
+
+const person = {
+    name: "kamm",
+    age: 34,
+    car: "Honda"
+}
+const car = person.car
+// console.log(car);
+const {name} = person
+// console.log(name);
 
 
 
