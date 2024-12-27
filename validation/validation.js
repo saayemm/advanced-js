@@ -31,6 +31,16 @@ const max = Math.max(...number5)
 const num2 = [1,3,4,5,6,7]
 const num3  = num2;
 num3.push(90)
-console.log(num2);
-console.log(num3);
+// console.log(num2);
+// console.log(num3);
+
+// Arrow  function
+
+const multiply = (first, second, third) => first * second * third
+const getAge = (person) => person.age;
+const student = { name: "samLi", age:45 };
+const age = getAge(student)
+console.log(age);
+
+
 
