@@ -40,7 +40,25 @@ const multiply = (first, second, third) => first * second * third
 const getAge = (person) => person.age;
 const student = { name: "samLi", age:45 };
 const age = getAge(student)
-console.log(age);
+// console.log(age);
+
+const getThird = number => number[2]
+const third = getThird([2,5,6,7,8,8])
+// console.log(third);
+
+// large arrow function
+
+const math = (a,b,c)=>{
+    const sum = a+b+c
+    const multiplay = a*b*c
+    const result1 = multiplay-sum
+    return result1;
+}
+const res = math(5,2,3)
+console.log(res);
+
+
+
 
 
 
