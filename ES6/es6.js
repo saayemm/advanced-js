@@ -43,3 +43,24 @@ const friendsFind = ["rony",  "prithy", "nazim", "sakib"]
 const evenFind = friendsE.find(e => e.length%2 ===0)
 // console.log(evenFind);
 
+// reduce
+const reduceNumber = [2,3,4,5,6,7]
+const reduceReslt = reduceNumber.reduce((p,c) => p+c , 0);
+// console.log(reduceReslt);
+
+
+const product2 = [
+    {name: "lenovo", price: 6000, model: "99jh"},
+    {name: "apple", price: 66000, model: "uoi9jh"}
+]
+const price = product2.map(product => product.price*2)
+// console.log(price);
+// const forEM = product2.forEach(p => console.log(p.name))
+
+const fil = product2.filter(p => p.price>5000)
+// console.log(fil);
+
+const total = product2.reduce((a,c) => a+c.price,0)
+// console.log(total);
+
+
