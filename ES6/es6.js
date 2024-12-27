@@ -26,5 +26,20 @@ const firstLetter = friends.map(friend=>friend[0])
 // console.log(firstLetter);
 
 
+// ForEach
+const someNumber = [2,3,4,5,6,7]
+const resultF = someNumber.forEach(n=>n*2)
 
+// Filter
+const filterNumber = [2,3,4,5,6,7]
+const above = filterNumber.filter(n => n>=5)
+// console.log(above);
+
+const friendsE = ["rony",  "prithy", "nazim", "sakib"]
+const evenF = friendsE.filter(e => e.length%2 ===0)
+// console.log(evenF);
+
+const friendsFind = ["rony",  "prithy", "nazim", "sakib"]
+const evenFind = friendsE.find(e => e.length%2 ===0)
+// console.log(evenFind);
 
