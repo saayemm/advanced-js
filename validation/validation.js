@@ -70,6 +70,67 @@ const car = person.car
 const {name} = person
 // console.log(name);
 
+const glass = {
+    brand: "hubni",
+    price: 500,
+    isClean: true,
+    size: "2xl"
+}
+const keys = Object.keys(glass)
+const values  = Object.values(glass)
+// console.log(keys);
+// console.log(values);
+
+
+// task 1
+const task1 = (a,b,c) => a*b*c
+// console.log(task1(2,3,4));
+
+
+// Task2
+const me = "I am a web developer"
+const love = "I love code"
+const food = "I love beef"
+
+// console.log(`
+//     ${me} ,
+//    ${love}, 
+//    ${food} `);
+
+
+// task 3
+const friends = ["prithy", "rony", "sakib", "nazim", "khairul"]
+let evenf = []
+const even = (friends) => {
+    for(const fri of friends){
+        if(fri.length%2===0){
+            evenf.push(fri)
+        }
+    }return evenf
+}
+// console.log(even(friends));
+
+
+// task 4
+const sqarr = [1,2,3]
+let ln = []
+const arrComsum = (sqarr) => {
+    let sum = 0;
+    for(const arr of sqarr){
+        const n = arr*arr;
+        ln.push(n)
+        sum = sum+n
+    }const avrg = sum/ln.length
+    return avrg
+}
+// console.log(arrComsum(sqarr));
+
+// task 5
+const array1 = [1,2,3,4]
+const array2 = [2,3,4,5]
+const combinedArray = [...array1,...array2]
+let maxVal = Math.max(...combinedArray)
+console.log(maxVal);
 
 
 
