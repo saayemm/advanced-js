@@ -13,13 +13,20 @@ const firstServer = kitchen()
 // console.log(firstServer());
 
 // Callback
-function greeting(greetingHandler, name){
-    greetingHandler(name)
-}
-// const laptop = {name: "hp", price: 67666, memory: "512MB"}
+// function greeting(greetingHandler, name){
+//     greetingHandler(name)
+// }
+// // const laptop = {name: "hp", price: 67666, memory: "512MB"}
 
-function greetingHandler(name){
-    console.log("good morning", name);
+// function greetingHandler(name){
+//     console.log("good morning", name);
     
+// }
+// greeting(greetingHandler)
+
+function sum(a,b,c){
+    const result = a+b+c
+    return result;
 }
-greeting(greetingHandler)
+const total = sum(67,5,6)
+console.log(total);
