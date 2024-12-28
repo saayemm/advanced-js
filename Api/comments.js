@@ -6,8 +6,14 @@ const loadComments = () => {
 }
 
 const loadComments2 = async() => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/albums")
+    try{
+        const res = await tch("https://jsonplaceholder.typicode.com/albums")
     const data = await res.json()
     console.log(data);
+    }
+    catch{
+        console.log("error is here");
+        
+    }
     
 }
